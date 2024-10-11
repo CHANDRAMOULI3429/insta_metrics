@@ -7,7 +7,7 @@ const cors = require('cors');
 dotenv.config(); // Load environment variables from .env file
 
 const app = express();
-const PORT = process.env.PORT || 5000;  // Use dynamic port assignment for deployment
+const PORT = process.env.PORT || 8080;  // Use dynamic port assignment for deployment
 
 // Middleware
 app.use(cors());
