@@ -7,7 +7,7 @@ const cors = require('cors');
 dotenv.config(); // Load environment variables from .env file
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5000;  // Use dynamic port assignment for deployment
 
 // Middleware
 app.use(cors());
@@ -92,5 +92,5 @@ app.get('/', (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(`Server running on port http://localhost:${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
